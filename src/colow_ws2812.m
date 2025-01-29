@@ -49,3 +49,19 @@ stage2 = [green_dim1 green_dim1 green_dim1 green_dim1 green_dim1 red_dim2 red_di
 stage3 = [green_dim1 green_dim1 green_dim1 green_dim1 green_dim1 red_dim2 red_dim2 red_dim2 red_dim2 red_dim2 blue_dim1 blue_dim1 blue_dim1 blue_dim1 zeros];
 
 load('shiftlight_table.mat');
+
+
+
+
+
+%Gear ratios
+first_gear_ratio = 3.267;
+second_gear_ratio = 2.04;
+third_gear_ratio = 1.429;
+forth_gear_ratio = 1.073;
+fifth_gear_ratio = 0.83;
+sixth_gear_ratio = 0.647;
+final_drive_ratio = 4.765;
+
+tire_radius = 0.31265; %based on 215/45/17
+
