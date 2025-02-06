@@ -2,7 +2,7 @@
 ## Makefile generated for component 'racecar_shiftlight'. 
 ## 
 ## Makefile     : racecar_shiftlight.mk
-## Generated on : Thu Jan 23 21:26:10 2025
+## Generated on : Wed Feb 05 20:17:30 2025
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/racecar_shiftlight.out
 ## Product type : executable
 ## 
@@ -149,43 +149,42 @@ RUN                 =
 # "Faster Builds" Build Configuration
 #----------------------------------------
 
-ARFLAGS              = -r
-ASFLAGS              = --abi=coffabi \
-                       -s \
-                       -v28 \
-                       -ml \
-                       $(ASFLAGS_ADDITIONAL)
-CFLAGS               = --abi=coffabi \
-                       --compile_only \
-                       --preproc_dependency="$(@:%.obj=%.dep)" --preproc_with_compile  \
-                       --large_memory_model \
-                       --silicon_version=28 \
-                       --define="LARGE_MODEL" \
-                       -I"$(F28_HEADERS)" \
-                       -I"$(F28_HEADERS)/include" \
-                       -I"$(TI_INCLUDE)"
-CPPFLAGS             =
-CPP_LDFLAGS          =
-CPP_SHAREDLIB_LDFLAGS  =
-OBJCOPYFLAGS_DWO     =  "$<"
-DOWNLOAD_FLAGS       = $(TARGET_LOAD_CMD_ARGS) $(PRODUCT)
-EXECUTE_FLAGS        =
-OBJCOPYFLAGS_HEX     =  -i "$<" -o "$@" -order MS -romwidth 16 -q
-LDFLAGS              = --abi=coffabi \
-                       -z -I$(TI_LIB) \
-                       --stack_size=$(STACK_SIZE) --warn_sections \
-                       --heap_size=$(HEAP_SIZE) \
-                       --reread_libs --rom_model \
-                       --priority \
-                       -m"$(PRODUCT_NAME).map"
 MEX_CPPFLAGS         =
 MEX_CPPLDFLAGS       =
 MEX_CFLAGS           =
 MEX_LDFLAGS          =
-MAKE_FLAGS           = -f $(MAKEFILE)
-SHAREDLIB_LDFLAGS    =
 
 
+
+#---------------------------
+# Model-Specific Options
+#---------------------------
+
+ASFLAGS = --abi=coffabi -s -v28 -ml $(ASFLAGS_ADDITIONAL)
+
+CFLAGS = --abi=coffabi --compile_only --preproc_dependency="$(@:%.obj=%.dep)" --preproc_with_compile  --large_memory_model --silicon_version=28 --define="LARGE_MODEL" -I"$(F28_HEADERS)" -I"$(F28_HEADERS)/include" -I"$(TI_INCLUDE)" -g
+
+LDFLAGS = --abi=coffabi -z -I$(TI_LIB) --stack_size=$(STACK_SIZE) --warn_sections --heap_size=$(HEAP_SIZE) --reread_libs --rom_model --priority -m"$(PRODUCT_NAME).map"
+
+SHAREDLIB_LDFLAGS = 
+
+CPPFLAGS = -g
+
+CPP_LDFLAGS = 
+
+CPP_SHAREDLIB_LDFLAGS = 
+
+ARFLAGS = -r
+
+OBJCOPYFLAGS_HEX = -i "$<" -o "$@" -order MS -romwidth 16 -q
+
+OBJCOPYFLAGS_DWO = "$<"
+
+DOWNLOAD_FLAGS = $(TARGET_LOAD_CMD_ARGS) $(PRODUCT)
+
+EXECUTE_FLAGS = 
+
+MAKE_FLAGS = -f $(MAKEFILE)
 
 ###########################################################################
 ## OUTPUT INFO
@@ -199,7 +198,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/racecar_shiftlight_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/shared/can/src/scanutil -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/inc -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/inc -IC:/ti/c2000/C2000W~2/LIBRAR~1/CALIBR~1/hrpwm/f2837xd/include -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1 -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1/inc -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/CLAmath/c28/include -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/inc
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/racecar_shiftlight_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/include -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/include -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/include -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/include -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/include -I$(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src -I$(MATLAB_ROOT)/toolbox/shared/can/src/scanutil -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/inc -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/inc -IC:/ti/c2000/C2000W~2/LIBRAR~1/CALIBR~1/hrpwm/f2837xd/include -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1 -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1/inc -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/CLAmath/c28/include -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/inc
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -207,10 +206,10 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__
-DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
+DEFINES_ = -DXCP_ADDRESS_GRANULARITY=XCP_ADDRESS_GRANULARITY_WORD -DCODERTARGET_XCP_DAQ_PACKED_MODE -DCODERTARGET_XCP_MAX_CONTIGUOUS_SAMPLES=8 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__
+DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DEXT_MODE=1 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
-DEFINES_OPTS = -DTID01EQ=0
+DEFINES_OPTS = -DXCP_EXTMODE_SIMULATION_TIME_IN_TICKS -DXCP_DAQ_SUPPORT -DXCP_CALIBRATION_SUPPORT -DXCP_TIMESTAMP_SUPPORT -DXCP_TIMESTAMP_BASED_ON_SIMULATION_TIME -DXCP_SET_MTA_SUPPORT -DEXTMODE_XCP_TRIGGER_SUPPORT -DXCP_MEM_BLOCK_1_SIZE=32 -DXCP_MEM_BLOCK_1_NUMBER=1 -DXCP_MEM_BLOCK_2_SIZE=56 -DXCP_MEM_BLOCK_2_NUMBER=1 -DXCP_MEM_BLOCK_3_SIZE=128 -DXCP_MEM_BLOCK_3_NUMBER=1 -DXCP_MEM_RESERVED_POOLS_TOTAL_SIZE=1765 -DXCP_MEM_RESERVED_POOLS_NUMBER=2 -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3 -DXCP_MEM_DAQ_RESERVED_POOLS_NUMBER=1 -DXCP_MIN_EVENT_NO_RESERVED_POOL=1 -DXCP_MAX_CTO_SIZE=32 -DXCP_MAX_DTO_SIZE=65532 -DXCP_MAX_ODT_ENTRY_SIZE=255 -DEXTMODE_STATIC -DEXTMODE_STATIC_SIZE=10000 -DON_TARGET_WAIT_FOR_START=0 -DTID01EQ=0
 DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DMW_PIL_SCIFIFOLEN=16 -DF2837X_REG_FORMAT -DMW_F2837XD -DSTACK_SIZE=1024 -DRT -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA000 -DCLA_RAMLS_PROG_LENGTH=0x1000 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x800
 DEFINES_STANDARD = -DMODEL=racecar_shiftlight -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 
@@ -220,7 +219,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_csl.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_dma.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_board.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_can.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c $(START_DIR)/racecar_shiftlight_ert_rtw/can_datatype_ground.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/sysctl.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDBoard_Realtime_Support.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGlobalInterrupts.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2837xDInit.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CpuTimers.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_DefaultISR.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieVect.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_SysCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_usDelay.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Adc.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Gpio.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Ipc_Driver_Lite.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerConfig.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGPIO.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/clb.c C:/ti/c2000/C2000Ware_4_03_00_00/libraries/dsp/FPU/c28/source/fpu32/utility/memcpy_fast.asm $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDSchedulerTimer0.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src/mw_soc_c2000_ipc.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/can.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/interrupt.c
+SRCS = $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_csl.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_dma.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_board.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_can.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c $(START_DIR)/racecar_shiftlight_ert_rtw/can_datatype_ground.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetInf.c $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetNaN.c $(START_DIR)/racecar_shiftlight_ert_rtw/rt_nonfinite.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/sysctl.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDBoard_Realtime_Support.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGlobalInterrupts.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2837xDInit.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CpuTimers.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_DefaultISR.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieVect.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_SysCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_usDelay.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Adc.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Gpio.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Ipc_Driver_Lite.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerConfig.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGPIO.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/clb.c C:/ti/c2000/C2000Ware_4_03_00_00/libraries/dsp/FPU/c28/source/fpu32/utility/memcpy_fast.asm $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDSchedulerTimer0.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/rtiostream_serial_c28x_ext_xcp.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/datamodify_xcp.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerSupport.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src/mw_soc_c2000_ipc.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/can.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/interrupt.c
 
 MAIN_SRC = $(START_DIR)/racecar_shiftlight_ert_rtw/ert_main.c
 
@@ -230,7 +229,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_c28xx_csl.obj MW_c28xx_dma.obj MW_c28xx_board.obj MW_c28xx_can.obj MW_c28xx_pwm.obj can_datatype_ground.obj racecar_shiftlight.obj racecar_shiftlight_data.obj sysctl.obj c2837xDBoard_Realtime_Support.obj MW_c28xGlobalInterrupts.obj c2837xDInit.obj dma.obj F2837xD_CpuTimers.obj F2837xD_DefaultISR.obj F2837xD_GlobalVariableDefs.obj F2837xD_PieCtrl.obj F2837xD_PieVect.obj F2837xD_SysCtrl.obj F2837xD_usDelay.obj F2837xD_CodeStartBranch.obj F2837xD_Dma.obj F2837xD_Adc.obj F2837xD_Gpio.obj F2837xD_Ipc_Driver_Lite.obj c2000HardwareTimerConfig.obj MW_c28xGPIO.obj clb.obj memcpy_fast.obj c2837xDSchedulerTimer0.obj mw_soc_c2000_ipc.obj can.obj interrupt.obj
+OBJS = xcp_ext_mode.obj MW_c28xx_csl.obj MW_c28xx_dma.obj MW_c28xx_board.obj MW_c28xx_can.obj MW_c28xx_pwm.obj can_datatype_ground.obj racecar_shiftlight.obj racecar_shiftlight_data.obj rtGetInf.obj rtGetNaN.obj rt_nonfinite.obj xcp_ext_common.obj xcp_ext_classic_trigger.obj xcp.obj xcp_standard.obj xcp_daq.obj xcp_calibration.obj xcp_fifo.obj xcp_transport.obj xcp_mem_default.obj xcp_drv_rtiostream.obj xcp_utils.obj xcp_frame_serial.obj xcp_ext_param_default_serial.obj sysctl.obj c2837xDBoard_Realtime_Support.obj MW_c28xGlobalInterrupts.obj c2837xDInit.obj dma.obj F2837xD_CpuTimers.obj F2837xD_DefaultISR.obj F2837xD_GlobalVariableDefs.obj F2837xD_PieCtrl.obj F2837xD_PieVect.obj F2837xD_SysCtrl.obj F2837xD_usDelay.obj F2837xD_CodeStartBranch.obj F2837xD_Dma.obj F2837xD_Adc.obj F2837xD_Gpio.obj F2837xD_Ipc_Driver_Lite.obj c2000HardwareTimerConfig.obj MW_c28xGPIO.obj clb.obj memcpy_fast.obj c2837xDSchedulerTimer0.obj rtiostream_serial_c28x_ext_xcp.obj datamodify_xcp.obj c2000HardwareTimerSupport.obj mw_soc_c2000_ipc.obj can.obj interrupt.obj
 
 MAIN_OBJ = ert_main.obj
 
@@ -262,35 +261,11 @@ SYSTEM_LIBS =
 # C Compiler
 #---------------
 
+CFLAGS_ =  --define="EXTMODE_DISABLEPRINTF" 
 CFLAGS_SKIPFORSIL = -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA000 -DCLA_RAMLS_PROG_LENGTH=0x1000 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x800
 CFLAGS_BASIC = $(DEFINES) $(INCLUDES)
 
-CFLAGS += $(CFLAGS_SKIPFORSIL) $(CFLAGS_BASIC)
-
-#-----------------
-# C++ Compiler
-#-----------------
-
-CPPFLAGS_SKIPFORSIL = -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA000 -DCLA_RAMLS_PROG_LENGTH=0x1000 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x800
-CPPFLAGS_BASIC = $(DEFINES) $(INCLUDES)
-
-CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
-
-#---------------
-# C++ Linker
-#---------------
-
-CPP_LDFLAGS_SKIPFORSIL = -l"rts2800_fpu32.lib" --define F28379D --define CPU1 --define BOOT_FROM_FLASH=1 --define BOOT_USING_BL=0 --define CPU_RAMLS_PROG_START=0x8000 --define CPU_RAMLS_PROG_LENGTH=0x1800 --define CLA_RAMLS_PROG_START=0xA000 --define CLA_RAMLS_PROG_LENGTH=0x1000 --define CLA_RAMLS_DATA_START=0x9800 --define CLA_RAMLS_DATA_LENGTH=0x800
-
-CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
-
-#------------------------------
-# C++ Shared Library Linker
-#------------------------------
-
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -l"rts2800_fpu32.lib" --define F28379D --define CPU1 --define BOOT_FROM_FLASH=1 --define BOOT_USING_BL=0 --define CPU_RAMLS_PROG_START=0x8000 --define CPU_RAMLS_PROG_LENGTH=0x1800 --define CLA_RAMLS_PROG_START=0xA000 --define CLA_RAMLS_PROG_LENGTH=0x1000 --define CLA_RAMLS_DATA_START=0x9800 --define CLA_RAMLS_DATA_LENGTH=0x800
-
-CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
+CFLAGS += $(CFLAGS_) $(CFLAGS_SKIPFORSIL) $(CFLAGS_BASIC)
 
 #-----------
 # Linker
@@ -307,6 +282,32 @@ LDFLAGS += $(LDFLAGS_SKIPFORSIL)
 SHAREDLIB_LDFLAGS_SKIPFORSIL = -l"rts2800_fpu32.lib" --define F28379D --define CPU1 --define BOOT_FROM_FLASH=1 --define BOOT_USING_BL=0 --define CPU_RAMLS_PROG_START=0x8000 --define CPU_RAMLS_PROG_LENGTH=0x1800 --define CLA_RAMLS_PROG_START=0xA000 --define CLA_RAMLS_PROG_LENGTH=0x1000 --define CLA_RAMLS_DATA_START=0x9800 --define CLA_RAMLS_DATA_LENGTH=0x800
 
 SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
+
+#-----------------
+# C++ Compiler
+#-----------------
+
+CPPFLAGS_ =  --define="EXTMODE_DISABLEPRINTF" 
+CPPFLAGS_SKIPFORSIL = -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA000 -DCLA_RAMLS_PROG_LENGTH=0x1000 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x800
+CPPFLAGS_BASIC = $(DEFINES) $(INCLUDES)
+
+CPPFLAGS += $(CPPFLAGS_) $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
+
+#---------------
+# C++ Linker
+#---------------
+
+CPP_LDFLAGS_SKIPFORSIL = -l"rts2800_fpu32.lib" --define F28379D --define CPU1 --define BOOT_FROM_FLASH=1 --define BOOT_USING_BL=0 --define CPU_RAMLS_PROG_START=0x8000 --define CPU_RAMLS_PROG_LENGTH=0x1800 --define CLA_RAMLS_PROG_START=0xA000 --define CLA_RAMLS_PROG_LENGTH=0x1000 --define CLA_RAMLS_DATA_START=0x9800 --define CLA_RAMLS_DATA_LENGTH=0x800
+
+CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
+
+#------------------------------
+# C++ Shared Library Linker
+#------------------------------
+
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -l"rts2800_fpu32.lib" --define F28379D --define CPU1 --define BOOT_FROM_FLASH=1 --define BOOT_USING_BL=0 --define CPU_RAMLS_PROG_START=0x8000 --define CPU_RAMLS_PROG_LENGTH=0x1800 --define CLA_RAMLS_PROG_START=0xA000 --define CLA_RAMLS_PROG_LENGTH=0x1000 --define CLA_RAMLS_DATA_START=0x9800 --define CLA_RAMLS_DATA_LENGTH=0x800
+
+CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
 ###########################################################################
 ## INLINED COMMANDS
@@ -541,6 +542,90 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
 
 
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/%.cla
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/%.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/%.asm
+	$(AS) $(ASFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/%.cpp
+	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/%.cla
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/%.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/%.asm
+	$(AS) $(ASFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/%.cpp
+	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/%.cla
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/%.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/%.asm
+	$(AS) $(ASFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/%.cpp
+	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/%.cla
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/%.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/%.asm
+	$(AS) $(ASFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/%.cpp
+	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/%.cla
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/%.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/%.asm
+	$(AS) $(ASFLAGS) --output_file="$@" "$<"
+
+
+%.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/%.cpp
+	$(CPP) $(CPPFLAGS) --output_file="$@" "$<"
+
+
+xcp_ext_mode.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
 MW_c28xx_csl.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_csl.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
@@ -574,6 +659,70 @@ racecar_shiftlight.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftli
 
 
 racecar_shiftlight_data.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+rtGetInf.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetInf.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+rtGetNaN.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetNaN.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+rt_nonfinite.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rt_nonfinite.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_ext_common.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_ext_classic_trigger.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_standard.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_daq.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_calibration.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_fifo.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_transport.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_mem_default.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_drv_rtiostream.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_utils.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_frame_serial.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+xcp_ext_param_default_serial.obj : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 
@@ -662,6 +811,18 @@ memcpy_fast.obj : C:/ti/c2000/C2000Ware_4_03_00_00/libraries/dsp/FPU/c28/source/
 
 
 c2837xDSchedulerTimer0.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDSchedulerTimer0.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+rtiostream_serial_c28x_ext_xcp.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/rtiostream_serial_c28x_ext_xcp.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+datamodify_xcp.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/datamodify_xcp.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+c2000HardwareTimerSupport.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerSupport.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 

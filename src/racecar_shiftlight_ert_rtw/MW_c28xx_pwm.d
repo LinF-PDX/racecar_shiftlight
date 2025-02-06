@@ -81,12 +81,16 @@ MW_c28xx_pwm.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000
 MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight.h
 MW_c28xx_pwm.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h
 MW_c28xx_pwm.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h
+MW_c28xx_pwm.obj: C:/PROGRA~1/MATLAB/R2023b/simulink/include/rtw_extmode.h
+MW_c28xx_pwm.obj: C:/PROGRA~1/MATLAB/R2023b/simulink/include/sysran_types.h
 MW_c28xx_pwm.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/shared/can/src/scanutil/can_message.h
 MW_c28xx_pwm.obj: C:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include/IQmathLib.h
 MW_c28xx_pwm.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/limits.h
 MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_types.h
+MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rt_nonfinite.h
 MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h
 MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_private.h
+MW_c28xx_pwm.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\multiword_types.h
 
 C:/school/racecar_shiftlight/src/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000BoardSupport.h:
@@ -171,10 +175,14 @@ C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000SchedulerTimer.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h:
+C:/PROGRA~1/MATLAB/R2023b/simulink/include/rtw_extmode.h:
+C:/PROGRA~1/MATLAB/R2023b/simulink/include/sysran_types.h:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/shared/can/src/scanutil/can_message.h:
 C:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include/IQmathLib.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/limits.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_types.h:
+C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rt_nonfinite.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_private.h:
+C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\multiword_types.h:
 

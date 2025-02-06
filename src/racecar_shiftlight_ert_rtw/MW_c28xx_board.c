@@ -97,6 +97,25 @@ void init_board (void)
 
   /* Assign used PWM modules to CPU1 */
   DevCfgRegs.CPUSEL0.bit.EPWM8 = 0U;
+
+#if MW_EXTMODE_SCIMODULE == 0
+
+  DevCfgRegs.CPUSEL5.bit.SCI_A = 0U;
+
+#elif MW_EXTMODE_SCIMODULE == 1
+
+  DevCfgRegs.CPUSEL5.bit.SCI_B = 0U;
+
+#elif MW_EXTMODE_SCIMODULE == 2
+
+  DevCfgRegs.CPUSEL5.bit.SCI_C = 0U;
+
+#elif MW_EXTMODE_SCIMODULE == 3
+
+  DevCfgRegs.CPUSEL5.bit.SCI_D = 0U;
+
+#endif
+
   DevCfgRegs.CPUSEL8.bit.CAN_B = 0U;
 
   /* Assign used SPI modules to CPU1 */
