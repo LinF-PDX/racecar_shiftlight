@@ -98,26 +98,6 @@ void init_board (void)
   /* Assign used PWM modules to CPU1 */
   DevCfgRegs.CPUSEL0.bit.EPWM8 = 0U;
 
-#if MW_EXTMODE_SCIMODULE == 0
-
-  DevCfgRegs.CPUSEL5.bit.SCI_A = 0U;
-
-#elif MW_EXTMODE_SCIMODULE == 1
-
-  DevCfgRegs.CPUSEL5.bit.SCI_B = 0U;
-
-#elif MW_EXTMODE_SCIMODULE == 2
-
-  DevCfgRegs.CPUSEL5.bit.SCI_C = 0U;
-
-#elif MW_EXTMODE_SCIMODULE == 3
-
-  DevCfgRegs.CPUSEL5.bit.SCI_D = 0U;
-
-#endif
-
-  DevCfgRegs.CPUSEL8.bit.CAN_B = 0U;
-
   /* Assign used SPI modules to CPU1 */
 #ifdef MW_SPI_A
 
@@ -210,14 +190,6 @@ void init_board (void)
   InitPieCtrl();
   InitPieVectTable();
   initSetGPIOIPC();
-
-  /* initial eCAN function.... */
-  /* Initialize eCAN_B Module with following parameters:
-   *    BRP=40, TSEG1=6, TSEG2=3
-   *    Resynchronize on: Only_falling_edges
-   *    Level of CAN bus: Sample_one_time
-   *    Synchronization jump width = 1 */
-  init_eCAN_B (40, 6, 3, 1, 1, 1);
   InitCpuTimers();
 
   /* initial ePWM GPIO assignment... */

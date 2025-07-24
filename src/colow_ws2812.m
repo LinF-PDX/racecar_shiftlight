@@ -5,6 +5,9 @@ all_amber = [amber amber amber amber amber amber amber amber amber amber amber a
 red = [20 20 20 20 20 20 20 20 40 40 40 40 40 40 40 20 20 20 20 20 20 20 20 20];
 green = [40 40 40 40 40 40 40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20];
 blue = [20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 40 40 40 40 40 40 40 20];
+all_red = [red red red red red red red red red red red red red red zeros];
+all_blue = [blue blue blue blue blue blue blue blue blue blue blue blue blue blue zeros];
+all_green = [green green green green green green green green green green green green green green zeros];
 %Day
 green_day = [20 20 20 40 40 20 40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20];
 red_day = [20 20 20 20 20 20 20 20 20 20 20 40 40 40 40 20 20 20 20 20 20 20 20 20];
