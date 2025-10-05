@@ -1,16 +1,18 @@
 ert_main.obj: C:/school/racecar_shiftlight/src/racecar_shiftlight_ert_rtw/ert_main.c
 ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight.h
+ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h
+ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h
+ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/linkage.h
+ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/cdefs.h
+ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h
 ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rtwtypes.h
 ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000BoardSupport.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdbool.h
-ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h
-ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/linkage.h
 ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/inc/MW_f2837xD_includes.h
 ert_main.obj: C:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include/F2837xD_device.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/assert.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdarg.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h
-ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/cdefs.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stddef.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdint.h
@@ -79,28 +81,28 @@ ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000/inc/c2837xDInit.h
 ert_main.obj: C:/school/racecar_shiftlight/src/racecar_shiftlight_ert_rtw/MW_target_hardware_resources.h
 ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/inc/MW_f2837xD_includes.h
 ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000SchedulerTimer.h
+ert_main.obj: C:/PROGRA~1/MATLAB/R2023b/toolbox/shared/can/src/scanutil/can_message.h
 ert_main.obj: C:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include/IQmathLib.h
 ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/limits.h
 ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_types.h
-ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h
-ert_main.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h
-ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rt_nonfinite.h
 ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h
 ert_main.obj: C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h
 
 C:/school/racecar_shiftlight/src/racecar_shiftlight_ert_rtw/ert_main.c:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/linkage.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/cdefs.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rtwtypes.h:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000BoardSupport.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdbool.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/linkage.h:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/inc/MW_f2837xD_includes.h:
 C:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include/F2837xD_device.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/assert.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdarg.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/cdefs.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stddef.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdint.h:
@@ -169,12 +171,10 @@ C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000/inc/c2837xDInit.h:
 C:/school/racecar_shiftlight/src/racecar_shiftlight_ert_rtw/MW_target_hardware_resources.h:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/inc/MW_f2837xD_includes.h:
 C:/PROGRA~1/MATLAB/R2023b/toolbox/c2b/tic2000_shared/src/c2000SchedulerTimer.h:
+C:/PROGRA~1/MATLAB/R2023b/toolbox/shared/can/src/scanutil/can_message.h:
 C:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include/IQmathLib.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/limits.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\racecar_shiftlight_types.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/string.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/xlocale/_string.h:
-C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\rt_nonfinite.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h:
 C:\school\racecar_shiftlight\src\racecar_shiftlight_ert_rtw\MW_target_hardware_resources.h:
 

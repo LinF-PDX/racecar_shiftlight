@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'racecar_shiftlight'.
  *
- * Model version                  : 1.58
+ * Model version                  : 1.78
  * Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
- * C/C++ source code generated on : Fri Mar 14 18:49:57 2025
+ * C/C++ source code generated on : Sat Oct  4 20:32:53 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000

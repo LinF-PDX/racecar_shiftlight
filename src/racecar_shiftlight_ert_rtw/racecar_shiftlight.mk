@@ -2,7 +2,7 @@
 ## Makefile generated for component 'racecar_shiftlight'. 
 ## 
 ## Makefile     : racecar_shiftlight.mk
-## Generated on : Fri Mar 14 18:50:01 2025
+## Generated on : Sat Oct 04 20:33:00 2025
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/racecar_shiftlight.out
 ## Product type : executable
 ## 
@@ -199,7 +199,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/racecar_shiftlight_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/inc -I$(MATLAB_ROOT)/toolbox/shared/can/src/scanutil -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/inc -IC:/ti/c2000/C2000W~2/LIBRAR~1/CALIBR~1/hrpwm/f2837xd/include -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1 -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1/inc -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/CLAmath/c28/include -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/inc
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/racecar_shiftlight_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/shared/can/src/scanutil -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/inc -I$(MATLAB_ROOT)/toolbox/c2b/tic2000/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/inc -IC:/ti/c2000/C2000W~2/LIBRAR~1/CALIBR~1/hrpwm/f2837xd/include -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1 -IC:/ti/c2000/C2000W~2/DRIVER~1/f2837xd/DRIVER~1/inc -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/headers/include -IC:/ti/c2000/C2000W~2/DEVICE~1/f2837xd/common -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/IQmath/c28/include -IC:/ti/c2000/C2000W~2/LIBRAR~1/math/CLAmath/c28/include -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src -I$(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/inc
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -220,7 +220,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_csl.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_dma.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_board.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetInf.c $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetNaN.c $(START_DIR)/racecar_shiftlight_ert_rtw/rt_nonfinite.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/sysctl.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDBoard_Realtime_Support.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGlobalInterrupts.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2837xDInit.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CpuTimers.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_DefaultISR.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieVect.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_SysCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_usDelay.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Adc.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Gpio.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Ipc_Driver_Lite.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerConfig.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGPIO.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/clb.c C:/ti/c2000/C2000Ware_4_03_00_00/libraries/dsp/FPU/c28/source/fpu32/utility/memcpy_fast.asm $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDSchedulerTimer0.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src/mw_soc_c2000_ipc.c
+SRCS = $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_csl.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_dma.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_board.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_can.c $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c $(START_DIR)/racecar_shiftlight_ert_rtw/can_datatype_ground.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight.c $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/sysctl.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDBoard_Realtime_Support.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGlobalInterrupts.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2837xDInit.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CpuTimers.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_DefaultISR.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_PieVect.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_SysCtrl.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_usDelay.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Dma.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Adc.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Gpio.c C:/ti/c2000/C2000Ware_4_03_00_00/device_support/f2837xd/common/source/F2837xD_Ipc_Driver_Lite.c $(MATLAB_ROOT)/toolbox/c2b/tic2000/src/c2000HardwareTimerConfig.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/MW_c28xGPIO.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/clb.c C:/ti/c2000/C2000Ware_4_03_00_00/libraries/dsp/FPU/c28/source/fpu32/utility/memcpy_fast.asm $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837xDSchedulerTimer0.c $(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src/mw_soc_c2000_ipc.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/can.c C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/interrupt.c
 
 MAIN_SRC = $(START_DIR)/racecar_shiftlight_ert_rtw/ert_main.c
 
@@ -230,7 +230,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_c28xx_csl.obj MW_c28xx_dma.obj MW_c28xx_board.obj MW_c28xx_pwm.obj racecar_shiftlight.obj racecar_shiftlight_data.obj rtGetInf.obj rtGetNaN.obj rt_nonfinite.obj sysctl.obj c2837xDBoard_Realtime_Support.obj MW_c28xGlobalInterrupts.obj c2837xDInit.obj dma.obj F2837xD_CpuTimers.obj F2837xD_DefaultISR.obj F2837xD_GlobalVariableDefs.obj F2837xD_PieCtrl.obj F2837xD_PieVect.obj F2837xD_SysCtrl.obj F2837xD_usDelay.obj F2837xD_CodeStartBranch.obj F2837xD_Dma.obj F2837xD_Adc.obj F2837xD_Gpio.obj F2837xD_Ipc_Driver_Lite.obj c2000HardwareTimerConfig.obj MW_c28xGPIO.obj clb.obj memcpy_fast.obj c2837xDSchedulerTimer0.obj mw_soc_c2000_ipc.obj
+OBJS = MW_c28xx_csl.obj MW_c28xx_dma.obj MW_c28xx_board.obj MW_c28xx_can.obj MW_c28xx_pwm.obj can_datatype_ground.obj racecar_shiftlight.obj racecar_shiftlight_data.obj sysctl.obj c2837xDBoard_Realtime_Support.obj MW_c28xGlobalInterrupts.obj c2837xDInit.obj dma.obj F2837xD_CpuTimers.obj F2837xD_DefaultISR.obj F2837xD_GlobalVariableDefs.obj F2837xD_PieCtrl.obj F2837xD_PieVect.obj F2837xD_SysCtrl.obj F2837xD_usDelay.obj F2837xD_CodeStartBranch.obj F2837xD_Dma.obj F2837xD_Adc.obj F2837xD_Gpio.obj F2837xD_Ipc_Driver_Lite.obj c2000HardwareTimerConfig.obj MW_c28xGPIO.obj clb.obj memcpy_fast.obj c2837xDSchedulerTimer0.obj mw_soc_c2000_ipc.obj can.obj interrupt.obj
 
 MAIN_OBJ = ert_main.obj
 
@@ -553,7 +553,15 @@ MW_c28xx_board.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_board.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 
+MW_c28xx_can.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_can.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
 MW_c28xx_pwm.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/MW_c28xx_pwm.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+can_datatype_ground.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/can_datatype_ground.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 
@@ -566,18 +574,6 @@ racecar_shiftlight.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftli
 
 
 racecar_shiftlight_data.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/racecar_shiftlight_data.c
-	$(CC) $(CFLAGS) --output_file="$@" "$<"
-
-
-rtGetInf.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetInf.c
-	$(CC) $(CFLAGS) --output_file="$@" "$<"
-
-
-rtGetNaN.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rtGetNaN.c
-	$(CC) $(CFLAGS) --output_file="$@" "$<"
-
-
-rt_nonfinite.obj : $(START_DIR)/racecar_shiftlight_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 
@@ -670,6 +666,14 @@ c2837xDSchedulerTimer0.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000_shared/src/c2837
 
 
 mw_soc_c2000_ipc.obj : $(MATLAB_ROOT)/toolbox/c2b/tic2000_soc/src/mw_soc_c2000_ipc.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+can.obj : C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/can.c
+	$(CC) $(CFLAGS) --output_file="$@" "$<"
+
+
+interrupt.obj : C:/ti/c2000/C2000Ware_4_03_00_00/driverlib/f2837xd/driverlib/interrupt.c
 	$(CC) $(CFLAGS) --output_file="$@" "$<"
 
 
