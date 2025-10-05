@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'racecar_shiftlight'.
  *
- * Model version                  : 1.78
+ * Model version                  : 1.79
  * Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
- * C/C++ source code generated on : Sat Oct  4 20:32:53 2025
+ * C/C++ source code generated on : Sat Oct  4 21:01:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -84,7 +84,6 @@ typedef struct {
   real_T CANUnpack1_o9;                /* '<S1>/CAN Unpack1' */
   real_T gas_pressed;                  /* '<S1>/CAN Unpack1' */
   real_T pedal_gas;                    /* '<S1>/CAN Unpack1' */
-  boolean_T NOT;                       /* '<S2>/NOT' */
 } B_racecar_shiftlight_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -193,6 +192,9 @@ struct P_racecar_shiftlight_T_ {
   real_T engine_rpm_Y0;                /* Computed Parameter: engine_rpm_Y0
                                         * Referenced by: '<S1>/engine_rpm'
                                         */
+  real_T clutch_status_Y0;             /* Computed Parameter: clutch_status_Y0
+                                        * Referenced by: '<S2>/clutch_status'
+                                        */
   real_T wheelspeed_fl_Y0;             /* Computed Parameter: wheelspeed_fl_Y0
                                         * Referenced by: '<S3>/wheelspeed_fl'
                                         */
@@ -231,9 +233,6 @@ struct P_racecar_shiftlight_T_ {
                                         */
   real_T Constant1_Value_e;            /* Expression: 1
                                         * Referenced by: '<Root>/Constant1'
-                                        */
-  boolean_T clutch_status_Y0;          /* Computed Parameter: clutch_status_Y0
-                                        * Referenced by: '<S2>/clutch_status'
                                         */
 };
 

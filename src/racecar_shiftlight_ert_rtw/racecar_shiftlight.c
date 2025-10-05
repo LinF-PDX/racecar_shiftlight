@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'racecar_shiftlight'.
  *
- * Model version                  : 1.78
+ * Model version                  : 1.79
  * Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
- * C/C++ source code generated on : Sat Oct  4 20:32:53 2025
+ * C/C++ source code generated on : Sat Oct  4 21:01:07 2025
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -864,16 +864,13 @@ void racecar_shiftlight_step(void)
           }
         }
       }
-
-      /* Logic: '<S2>/NOT' */
-      racecar_shiftlight_B.NOT = !(racecar_shiftlight_B.CANUnpack1_o3 != 0.0);
     }
   }
 
   /* End of Outputs for S-Function (c280xcanrcv): '<Root>/CAN Receive1' */
 
   /* Logic: '<S5>/NOT' */
-  rtb_NOT = !racecar_shiftlight_B.NOT;
+  rtb_NOT = !(racecar_shiftlight_B.CANUnpack1_o3 != 0.0);
 
   /* Chart: '<S5>/clutch_debounce' */
   if (racecar_shiftlight_DW.temporalCounter_i1 < 255U) {
@@ -1733,10 +1730,10 @@ void racecar_shiftlight_initialize(void)
 
   /*-----------S-Function Block: <S2>/CAN Unpack1 -----------------*/
 
-  /* SystemInitialize for Logic: '<S2>/NOT' incorporates:
+  /* SystemInitialize for S-Function (scanunpack): '<S2>/CAN Unpack1' incorporates:
    *  Outport: '<S2>/clutch_status'
    */
-  racecar_shiftlight_B.NOT = racecar_shiftlight_P.clutch_status_Y0;
+  racecar_shiftlight_B.CANUnpack1_o3 = racecar_shiftlight_P.clutch_status_Y0;
 
   {
     uint32_t ui32Flags;
