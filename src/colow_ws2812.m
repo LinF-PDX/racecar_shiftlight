@@ -14,7 +14,6 @@ red_day = [20 20 20 20 20 20 20 20 20 20 20 40 40 40 40 20 20 20 20 20 20 20 20 
 blue_day = [20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 40 40 40 40 20];
 rgb_day = [green_day green_day red_day red_day blue_day blue_day blue_day blue_day blue_day blue_day red_day red_day green_day green_day zeros];
 red_day_all = [red_day red_day red_day red_day red_day red_day red_day red_day red_day red_day red_day red_day red_day red_day zeros];
-red_night_all = [red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night zeros];
 
 stage1_day = [green_day linspace(20,20,288) green_day zeros];
 stage2_day = [green_day green_day linspace(20,20,240) green_day green_day zeros];
@@ -28,6 +27,7 @@ green_night = [20 20 20 20 20 40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
 red_night = [20 20 20 20 20 20 20 20 20 20 20 20 20 40 20 20 20 20 20 20 20 20 20 20];
 blue_night = [20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 40 20 20];
 rgb_night = [green_night green_night red_night red_night blue_night blue_night blue_night blue_night blue_night blue_night red_night red_night green_night green_night zeros];
+red_night_all = [red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night red_night zeros];
 
 stage1_night = [green_night linspace(20,20,288) green_night zeros];
 stage2_night = [green_night green_night linspace(20,20,240) green_night green_night zeros];
